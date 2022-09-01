@@ -1,1 +1,15 @@
 # Credit_Risk_Analysis
+# Credit_Risk_Analysis
+## Purpose
+The main purpose of this analysis is to oversample the data using the RandomOverSampler and SMOTE algorithms and undersample using the ClusterCentroids algorithm. Next we'll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk.
+## Results
+- [**RandomOverSampler:**](https://drive.google.com/file/d/1jKnELkhZGOK6oqe1-Afox_4VRM4iHn5U/view?usp=sharing) For this test the precision results are as TP-70,FP-6933,FN-31,TN-10171. Recall values for high risk are 69% and for low risk are 0.59%. The Balance Accuracy Score is 64% for this test.
+- [**SMOTE:**](https://drive.google.com/file/d/1cV9Mll-tiMuFPiLkkBVMFOm1aHj7LPnk/view?usp=sharing) For Smote Oversampling the balance accuracy score (66.2%) is higher than RandomOverSampler results. The confusion matrix results are TP-64,FP-5266,FN-37,TN-11838. Recall values are 63% for high risk and 69% for low risk.
+- [**ClusterCentroids:**](https://drive.google.com/file/d/1hD45NfTlThcGSOFUA4R0_jRYx4UT3ovW/view?usp=sharing) For this Undersampling tests the balance accuracy score is 54%, which is much lower than the oversampling results. Recall values for low risk credit are 40%, which is very low in compare to previous results, the recall value for high risk is 69%.
+- [**Smoteen:**](https://drive.google.com/file/d/1mi9CJg0yluLlIp-uGJXYOwXNk80kVq9t/view?usp=sharing) The results for confusion matrix are TP-73,FN-28,FP-7409,TN-9695. The recall value for high risk credit is very high at 74%, and the low risk recall is at 54%. The balanced accuracy score is at 64.4% for this test.
+- [**BalancedRandomForestClassifier:**](https://drive.google.com/file/d/1YBCQJsGVEDYyGJccgQuG84nHkpogWyfN/view?usp=sharing) For this test the balance accuracy score is at second highest with 78.8%. The recall values are at 70% for high risk credit with 3% precision and 87% for low risk credit with 100% precision.
+- [**EasyEnsembleClassifier:**](https://drive.google.com/file/d/1TVMJie3SKfYzVSQiFJhWVeU1ismdIgC7/view?usp=sharing) This test has the highest values for all tests. The balance accuracy score is 93.16%. The recall values for high risk credit are 92% and low risk credit is 94%. The precision for high and low risk is 9% and 100% simultaneously. 
+
+## Summary
+- To summarize the EasyEnsembleClassifier test has the highest values for recall which is 92% for high risk and 94% for low risk. The balance accuracy score is also the highest of all models with 93.17%. 
+- As we can analyze from all the models that none of the models is recommended to be used in banking system. Too many customers were falsely predicted as low risk credit using all of these models. Which could affect the credit strategies of the banks. Therefore i would not recommend using any of these models because the false results values are too high.
